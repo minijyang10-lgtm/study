@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>건강 정보 입력</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            ❤️ Heart Care AI
+        </div>
+
+        <ul class="menu">
+            <li><a href="index.html">홈</a></li>
+            <li><a href="input.html">건강 정보 입력</a></li>
+            <li><a href="about.html">프로젝트 소개</a></li>
+        </ul>
+
+    </nav>
+
+    <div class="form-container">
+
+        <h1>건강 정보 입력</h1>
+
+        <p>생활 습관과 건강 상태를 입력해주세요.</p>
+
+        <form id="healthForm">
+
+            <div class="input-group">
+
+                <label>흡연 여부</label>
+
+                <select id="smoking">
+
+                    <option>비흡연</option>
+                    <option>흡연</option>
+
+                </select>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>운동 빈도</label>
+
+                <select id="exercise">
+
+                    <option>주 5회 이상</option>
+                    <option>주 3~4회</option>
+                    <option>주 1~2회</option>
+                    <option>거의 안 함</option>
+
+                </select>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>스트레스 (1~5)</label>
+
+                <input
+                    type="range"
+                    id="stress"
+                    min="1"
+                    max="5"
+                    value="3"
+                    oninput="stressValue.innerText=this.value">
+
+                <span id="stressValue">3</span>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>최고 혈압(mmHg)</label>
+
+                <input
+                    type="number"
+                    id="systolic"
+                    placeholder="예 : 120"
+                    required>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>최저 혈압(mmHg)</label>
+
+                <input
+                    type="number"
+                    id="diastolic"
+                    placeholder="예 : 80"
+                    required>
+
+            </div>
+
+            <div class="step-area">
+
+                <span>2 / 2</span>
+
+                <button
+                    type="submit"
+                    class="next-btn">
+
+                    예측하기
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

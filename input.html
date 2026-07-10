@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>기본 정보 입력</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            ❤️ Heart Care AI
+        </div>
+
+        <ul class="menu">
+            <li><a href="index.html">홈</a></li>
+            <li><a href="input.html">건강 정보 입력</a></li>
+            <li><a href="about.html">프로젝트 소개</a></li>
+        </ul>
+
+    </nav>
+
+    <div class="form-container">
+
+        <h1>기본 정보 입력</h1>
+
+        <p>심장질환 위험도 분석을 위해 기본 정보를 입력해주세요.</p>
+
+        <form id="basicForm">
+
+            <div class="input-group">
+
+                <label>이름</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="이름을 입력하세요"
+                    required>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>나이</label>
+
+                <input
+                    type="number"
+                    id="age"
+                    placeholder="예 : 25"
+                    required>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>성별</label>
+
+                <div class="radio-group">
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="gender"
+                            value="남성"
+                            checked>
+
+                        남성
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="gender"
+                            value="여성">
+
+                        여성
+                    </label>
+
+                </div>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>키(cm)</label>
+
+                <input
+                    type="number"
+                    id="height"
+                    placeholder="예 : 170"
+                    required>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>몸무게(kg)</label>
+
+                <input
+                    type="number"
+                    id="weight"
+                    placeholder="예 : 65"
+                    required>
+
+            </div>
+
+            <div class="step-area">
+
+                <span>1 / 2</span>
+
+                <button
+                    type="submit"
+                    class="next-btn">
+
+                    다음 →
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

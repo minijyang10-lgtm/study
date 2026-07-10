@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>예측 결과 | Heart Care AI</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- 네비게이션 -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            ❤️ Heart Care AI
+        </div>
+
+        <ul class="menu">
+
+            <li><a href="index.html">홈</a></li>
+            <li><a href="input.html">건강 정보 입력</a></li>
+            <li><a href="#">건강 정보</a></li>
+            <li><a href="#">프로젝트 소개</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- 결과 -->
+
+    <div class="result-container">
+
+        <div id="captureArea">
+
+            <h1>심장질환 위험 예측 결과</h1>
+
+            <p class="subtitle">
+                입력한 건강 정보를 바탕으로 분석한 결과입니다.
+            </p>
+
+            <div id="resultBox"></div>
+
+        </div>
+
+    <div class="button-group">
+
+        <button id="saveBtn" class="action-btn">
+            📷 이미지 저장
+        </button>
+
+        <button onclick="location.href='input.html'" class="action-btn">
+            🔄 다시 검사하기
+        </button>
+
+    </div>
+
+    </div>
+        <div id="captureArea">
+
+            <div id="resultBox"></div>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+
+            Heart Care AI © 2026
+
+        </p>
+
+        <p>
+
+            본 결과는 교육용 예측 프로그램이며 실제 의료 진단을 대신하지 않습니다.
+
+        </p>
+
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+
+</html>

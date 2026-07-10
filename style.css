@@ -1,0 +1,857 @@
+/* ==========================
+   기본 설정
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"맑은 고딕", sans-serif;
+}
+
+body{
+    background:#eef5ff;
+    color:#333;
+    line-height:1.6;
+}
+
+/* ==========================
+   네비게이션
+========================== */
+
+.navbar{
+
+    width:100%;
+    height:80px;
+
+    background:#ffffff;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 70px;
+
+    box-shadow:0 2px 12px rgba(0,0,0,.08);
+
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+}
+
+.logo{
+
+    font-size:32px;
+    font-weight:bold;
+    color:#2f80ed;
+
+}
+
+.menu{
+
+    display:flex;
+    list-style:none;
+    gap:35px;
+
+}
+
+.menu a{
+
+    text-decoration:none;
+    color:#444;
+    font-size:18px;
+    transition:.3s;
+
+}
+
+.menu a:hover{
+
+    color:#2f80ed;
+
+}
+
+/* ==========================
+   메인(Hero)
+========================== */
+
+.hero{
+
+    max-width:1200px;
+
+    margin:80px auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    gap:80px;
+
+}
+
+.hero-text{
+
+    flex:1;
+
+}
+
+.hero-text h1{
+
+    font-size:52px;
+    color:#2f80ed;
+    margin-bottom:25px;
+
+}
+
+.hero-text p{
+
+    font-size:22px;
+    color:#666;
+    margin-bottom:40px;
+
+}
+
+.start-btn{
+
+    width:240px;
+    height:60px;
+
+    border:none;
+    border-radius:12px;
+
+    background:#2f80ed;
+    color:white;
+
+    font-size:20px;
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.start-btn:hover{
+
+    background:#1769d3;
+
+}
+
+.hero-image{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.heart-img{
+
+    width:70%;
+    height:70%;
+
+    object-fit:contain;
+
+}
+.heart-img:hover{
+
+    transform:scale(1.05);
+
+}
+
+.heart-box{
+
+    width:380px;
+
+    height:380px;
+
+    background:white;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    overflow:hidden;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+
+}
+
+
+/* ==========================
+   기능 카드
+========================== */
+
+.features{
+
+    max-width:1200px;
+
+    margin:80px auto;
+
+    display:flex;
+    justify-content:space-between;
+    gap:30px;
+
+}
+
+.feature-card{
+
+    flex:1;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+    transition:.3s;
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.icon{
+
+    font-size:55px;
+    margin-bottom:20px;
+
+}
+
+.feature-card h2{
+
+    color:#2f80ed;
+    margin-bottom:15px;
+
+}
+
+.feature-card p{
+
+    color:#666;
+    font-size:17px;
+
+}
+/* ==========================
+   통계 카드
+========================== */
+
+.stats{
+
+    max-width:1200px;
+
+    margin:70px auto;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.stat-card{
+
+    width:350px;
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
+
+}
+
+.stat-card h2{
+
+    color:#2f80ed;
+
+    margin-bottom:20px;
+
+}
+
+.stat-card h1{
+
+    font-size:60px;
+
+    color:#2f80ed;
+
+    margin-bottom:10px;
+
+}
+
+.stat-card p{
+
+    color:#666;
+
+}
+
+/* ==========================
+   건강 팁
+========================== */
+
+.tip{
+
+    max-width:1200px;
+
+    margin:0 auto 80px;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+}
+
+.tip h2{
+
+    color:#2f80ed;
+    margin-bottom:20px;
+
+}
+
+.tip p{
+
+    font-size:20px;
+    color:#666;
+
+}
+
+/* ==========================
+   입력 페이지
+========================== */
+
+.form-container{
+
+    width:700px;
+
+    margin:60px auto;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.12);
+
+}
+
+.form-container h1{
+
+    text-align:center;
+    color:#2f80ed;
+    margin-bottom:10px;
+
+}
+
+.form-container p{
+
+    text-align:center;
+    color:#666;
+    margin-bottom:35px;
+
+}
+
+.input-group{
+
+    display:flex;
+    flex-direction:column;
+
+    margin-bottom:22px;
+
+}
+
+.input-group label{
+
+    margin-bottom:8px;
+    font-weight:bold;
+    font-size:17px;
+
+}
+
+.input-group input,
+.input-group select{
+
+    padding:14px;
+
+    border:1px solid #ccc;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+}
+
+.radio-group{
+
+    display:flex;
+    gap:30px;
+    margin-top:10px;
+
+}
+
+.step-area{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-top:40px;
+
+}
+
+.step-area span{
+
+    font-size:18px;
+    font-weight:bold;
+    color:#777;
+
+}
+
+.next-btn{
+
+    width:160px;
+    height:50px;
+
+    border:none;
+    border-radius:10px;
+
+    background:#2f80ed;
+    color:white;
+
+    font-size:18px;
+    cursor:pointer;
+
+}
+
+.next-btn:hover{
+
+    background:#1769d3;
+
+}
+
+/* ==========================
+   결과 페이지
+========================== */
+
+.result-container{
+
+    max-width:900px;
+
+    margin:60px auto;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.12);
+
+}
+
+.result-title{
+
+    text-align:center;
+    color:#2f80ed;
+    margin-bottom:30px;
+
+}
+
+.result-card{
+
+    background:#f8fbff;
+
+    border-radius:15px;
+
+    padding:25px;
+
+    margin-bottom:25px;
+
+}
+
+.result-card h2{
+
+    color:#2f80ed;
+    margin-bottom:15px;
+
+}
+
+.info-table{
+
+    width:100%;
+    border-collapse:collapse;
+
+}
+
+.info-table td{
+
+    padding:12px;
+    border-bottom:1px solid #ddd;
+
+}
+
+.progress{
+
+    width:100%;
+    height:22px;
+
+    background:#ddd;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    margin-top:15px;
+
+}
+
+.progress-bar{
+
+    height:100%;
+    width:0%;
+
+    background:#2f80ed;
+
+    transition:.7s;
+
+}
+
+.retry-btn{
+
+    display:block;
+
+    width:220px;
+
+    margin:35px auto 0;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#2f80ed;
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+}
+
+.retry-btn:hover{
+
+    background:#1769d3;
+
+}
+
+/* ==========================
+   Footer
+========================== */
+
+footer{
+
+    margin-top:80px;
+
+    padding:25px;
+
+    text-align:center;
+
+    color:#777;
+
+    font-size:15px;
+
+}
+/* ==========================
+   프로젝트 소개
+========================== */
+
+.about-container{
+
+    max-width:1000px;
+
+    margin:60px auto;
+
+}
+
+.about-container h1{
+
+    text-align:center;
+
+    color:#2f80ed;
+
+    margin-bottom:40px;
+
+}
+
+.about-card{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:18px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
+
+    margin-bottom:30px;
+
+}
+
+.about-card h2{
+
+    color:#2f80ed;
+
+    margin-bottom:18px;
+
+}
+
+.about-card p{
+
+    color:#555;
+
+    line-height:1.8;
+
+    margin-bottom:15px;
+
+    font-size:17px;
+
+}
+
+.about-card ul{
+
+    margin-left:25px;
+
+}
+
+.about-card li{
+
+    margin-bottom:10px;
+
+    font-size:17px;
+
+}
+/* 응급처치 */
+
+.emergency{
+
+    width:1200px;
+    margin:80px auto;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.12);
+
+}
+
+.emergency h2{
+
+    color:#e53935;
+
+    margin-bottom:15px;
+
+}
+
+.emergency-sub{
+
+    color:#666;
+
+    margin-bottom:25px;
+
+}
+
+.info-btn{
+
+    width:260px;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#2f80ed;
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    margin-bottom:25px;
+
+}
+
+.info-btn:hover{
+
+    background:#1b63c4;
+
+}
+
+.hidden{
+
+    display:none;
+
+}
+
+#emergencyBox img{
+
+    width:100%;
+
+    max-width:850px;
+
+    display:block;
+
+    margin:30px auto;
+
+    border-radius:15px;
+
+}
+
+#emergencyBox h3{
+
+    color:#2f80ed;
+
+    margin:25px 0 15px;
+
+}
+
+#emergencyBox ul{
+
+    margin-left:25px;
+
+    line-height:2;
+
+}
+
+#emergencyBox ol{
+
+    margin-left:25px;
+
+    line-height:2;
+
+}
+
+#emergencyBox p{
+
+    line-height:1.8;
+
+    color:#555;
+
+}
+
+.source{
+
+    text-align:right;
+
+    font-size:13px;
+
+    color:#888;
+
+    margin-top:20px;
+
+}
+.save-image-btn{
+
+    display:block;
+
+    margin:30px auto;
+
+    width:220px;
+
+    padding:15px;
+
+    background:#2f80ed;
+
+    color:white;
+
+    border:none;
+
+    border-radius:10px;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+}
+
+.save-image-btn:hover{
+
+    background:#1d65c1;
+
+}
+/* 결과 페이지 버튼 */
+
+.button-group{
+
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    margin-top:40px;
+    margin-bottom:20px;
+
+}
+
+.action-btn{
+
+    width:220px;
+    height:65px;
+
+    border:none;
+    border-radius:15px;
+
+    background:#2f80ed;
+    color:white;
+
+    font-size:22px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    box-shadow:0 5px 15px rgba(47,128,237,.3);
+
+}
+
+.action-btn:hover{
+
+    background:#1d65c1;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 8px 20px rgba(47,128,237,.45);
+
+}
+
+.action-btn:active{
+
+    transform:scale(.97);
+
+}

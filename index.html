@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Heart Care AI</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- 네비게이션 -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            ❤️ Heart Care AI
+        </div>
+
+        <ul class="menu">
+            <li><a href="index.html">홈</a></li>
+            <li><a href="input.html">건강 정보 입력</a></li>
+            <li><a href="about.html">프로젝트 소개</a></li>
+        </ul>
+
+    </nav>
+
+
+    <!-- 메인 화면 -->
+
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <h1>
+                심장질환 위험 예측 프로그램
+            </h1>
+
+            <p>
+                사용자의 건강 정보를 입력하면
+                심장질환 위험도를 예측하고
+                건강관리 방법을 추천해주는 프로그램입니다.
+            </p>
+
+            <a href="input.html">
+                <button class="start-btn">
+                    검사 시작하기 →
+                </button>
+            </a>
+
+        </div>
+
+
+        <div class="hero-image">
+            <div class="heart-box">
+                <img src="images/im-heart.jpg" class="heart-img">
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- 기능 소개 -->
+
+    <section class="features">
+
+        <div class="feature-card">
+
+            <div class="icon">📝</div>
+
+            <h2>건강 정보 입력</h2>
+
+            <p>
+                나이, 혈압, 운동 여부 등
+                건강 정보를 입력합니다.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="icon">🤖</div>
+
+            <h2>AI 위험도 분석</h2>
+
+            <p>
+                입력된 정보를 기반으로
+                심장질환 위험도를 계산합니다.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="icon">❤️</div>
+
+            <h2>건강관리 추천</h2>
+
+            <p>
+                위험 요인과 함께
+                생활습관 개선 방법을 제공합니다.
+            </p>
+
+        </div>
+
+    </section>
+    <section class="stats">
+
+        <div class="stat-card">
+
+            <h2>누적 검사 횟수</h2>
+
+            <h1 id="testCount">0</h1>
+
+            <p>명의 사용자가 검사를 완료했습니다.</p>
+
+        </div>
+
+    </section>
+
+    <!-- 오늘의 건강 팁 -->
+
+    <section class="tip">
+
+        <h2>오늘의 건강 팁</h2>
+
+        <p id="tipText">
+            하루 30분 걷기는 심혈관 건강에 도움이 됩니다.
+        </p>
+
+    </section>
+    <section class="emergency">
+
+    <h2>🚑 심정지 리듬과 응급처치</h2>
+
+    <p class="emergency-sub">
+        아래 버튼을 눌러 대표적인 심정지 리듬과
+        자동심장충격기(AED) 및 심폐소생술의 중요성을 확인하세요.
+    </p>
+
+    <button id="openInfo" class="info-btn">
+        심정지 리듬 알아보기 ▼
+    </button>
+
+    <div id="emergencyBox" class="hidden">
+
+        <img src="images/file.png"
+             alt="심정지 리듬">
+
+        <h3>대표적인 심정지 리듬</h3>
+
+        <ul>
+            <li><b>심실세동(VF)</b> : 심장이 불규칙하게 떨려 혈액을 제대로 보내지 못하는 상태</li>
+
+            <li><b>무맥성 심실빈맥(pVT)</b> : 심장이 매우 빠르게 뛰지만 맥박이 없어 혈액순환이 되지 않는 상태</li>
+
+            <li><b>무수축(Asystole)</b> : 심장의 전기활동이 거의 없어 심장이 멈춘 상태</li>
+
+            <li><b>무맥성 전기활동(PEA)</b> : 전기활동은 있지만 실제 심장 수축이 이루어지지 않는 상태</li>
+        </ul>
+
+        <h3>AED와 심폐소생술의 중요성</h3>
+
+        <p>
+            심정지 환자를 발견하면 가장 먼저 119에 신고한 후
+            즉시 가슴압박을 시작해야 합니다.
+            AED가 도착하면 음성 안내에 따라 가능한 빠르게
+            사용해야 하며, 특히 <b>심실세동(VF)</b>과
+            <b>무맥성 심실빈맥(pVT)</b>은
+            전기충격으로 회복될 가능성이 있는 리듬입니다.
+            따라서 심폐소생술과 AED를 함께 시행하는 것이
+            생존율을 높이는 가장 중요한 방법입니다.
+        </p>
+
+        <h3>AED 사용 순서</h3>
+
+        <ol>
+            <li>환자의 의식과 호흡을 확인합니다.</li>
+            <li>119에 신고하고 AED를 요청합니다.</li>
+            <li>가슴압박 중심의 심폐소생술을 시작합니다.</li>
+            <li>AED 전원을 켜고 음성 안내를 따릅니다.</li>
+            <li>패드를 부착한 후 심장 리듬을 분석합니다.</li>
+            <li>전기충격이 필요하면 모두 떨어진 뒤 제세동을 시행합니다.</li>
+            <li>즉시 가슴압박을 다시 시작합니다.</li>
+        </ol>
+
+        <p class="source">
+            출처 : 강남구보건소
+        </p>
+
+    </div>
+
+</section>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 Heart Care AI |
+            고등학교 자율적 교육과정 프로젝트
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
